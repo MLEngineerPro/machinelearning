@@ -20,7 +20,7 @@ with st.sidebar:
                                         'E.P.S. REGIMEN CONTRIBUTIVO','E.P.S. REGIMEN SUBSID COMPARTI',
                                         'E.P.S. REGIMEN SUBSIDIADO','EXTRANJERO PERSONA JURIDICA',
                                         'EXTRANJERO PERSONA NATURAL','FOSYGA - ACCIDENT TTO - ECAT'))
-  ordenenesl=st.slider('Ordenes Laboratorio:',1, 10, 2)
+  ordenesl=st.slider('Ordenes Laboratorio:',1, 10, 2)
   ordenesm=st.slider('Ordenes Microbiologia:',1, 10, 2)
   ordenesa=st.slider('Ordenes Ayudas:',1, 10, 2)
   ordenesi=st.slider('Ordenes Interconsulta:',1, 10, 2)
