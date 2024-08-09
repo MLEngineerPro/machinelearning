@@ -4,7 +4,7 @@ import xgboost
 import pandas as pd
 
 st.title('🎈 Predicción de pacientes que serán hospitalizados - Machine Learning ')
-st.info('Esta aplicación predice si un paciente se va a hospitalizar o no. Modifique las variables de entrada para obtener la predicción')
+st.info('Esta aplicación predice si un paciente se va a hospitalizar o no. \n En la barra lateral modifique las variables de entrada para obtener la predicción')
 
 with st.sidebar:
   st.header('Modifique las características')
