@@ -1,6 +1,5 @@
 import streamlit as st
 import joblib
-import imblearn
 
 st.title('🎈 Aplicación de Machine Learning ')
 st.info('Esta aplicación predice si un paciente se va a hospitalizar o no.')
@@ -33,7 +32,7 @@ with st.sidebar:
   ordencx = st.selectbox('Orden Cirugía', ('Si', 'No'))
 
 # Cargo el modelo
-model = joblib.load('production/models/pipeline_xgbv5_bal_new_fea.joblib')
+model = joblib.load('production/models/pipeline_xgbv4.joblib')
 
 # Defino las variables
 cols_features=[
