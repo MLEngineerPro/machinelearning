@@ -71,5 +71,5 @@ def return_predic(pred, p_pred):
 
 st.text(return_predic(prediction,prediction_Percentage))
 prediction
-
+prediction_Percentage
   
