@@ -56,10 +56,10 @@ cols_features=[
  ]
 features=[(edad, genero, triaje, causa, tipoemp,ordenesl,ordenesm,ordenesa,ordenesi,especialidad, totaldxurordenesa,nroatencionesprev, vivemed,ordencx  )]
 data_features=pd.DataFrame(data=features, columns=cols_features)
-
+data_features
 # Realizo predicción
-#prediction=model.predict(data_features)
-#prediction_Percentage=model.predict_proba(data_features)
+prediction=model.predict(data_features)
+prediction_Percentage=model.predict_proba(data_features)
     
 def return_predic(pred, p_pred):
     pr1=''
@@ -70,5 +70,5 @@ def return_predic(pred, p_pred):
     return print(f"El paciente tiene una probabilidad del {p_pred[0,0]:.2%}  de {pr1} ser hospitalizado")
 
 #st.text(return_predic(prediction,prediction_Percentage))
-data_features  
+
   
