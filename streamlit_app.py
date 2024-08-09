@@ -30,6 +30,7 @@ with st.sidebar:
                                                         'ANTIBIOTICOTERAPIA','CARDIOLOGIA - HEMODINAMIA',
                                                         'CIRUGIA GENERAL','MEDICO GENERAL'))
   totaldxurordenesa=st.slider('Total dx Urgencias:',1, 10, 3)
+  nroatencionesprev=st.slider('Nro. atenciones prvias:',1, 10, 3)
   vivemed = st.selectbox('Vive en Medellín', ('Si', 'No'))
   ordencx = st.selectbox('Orden Cirugía', ('Si', 'No'))
 
@@ -53,7 +54,7 @@ cols_features=[
 'Vive en Medellin',
 'Orden Cirugia '
  ]
-features=[(edad, genero, triaje, causa, tipoemp,ordenesl,ordenesm,ordenesa,ordenesi,especialidad, totaldxurordenesa, vivemed,ordencx  )]
+features=[(edad, genero, triaje, causa, tipoemp,ordenesl,ordenesm,ordenesa,ordenesi,especialidad, totaldxurordenesa,nroatencionesprev, vivemed,ordencx  )]
 data_features=pd.DataFrame(data=features, columns=cols_features)
 
 # Realizo predicción
