@@ -1,5 +1,6 @@
 import streamlit as st
 import joblib
+import xgboost
 
 st.title('🎈 Aplicación de Machine Learning ')
 st.info('Esta aplicación predice si un paciente se va a hospitalizar o no.')
