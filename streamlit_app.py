@@ -4,7 +4,7 @@ import xgboost
 import pandas as pd
 
 st.title('🎈 Aplicación de Machine Learning ')
-st.info('Esta aplicación predice si un paciente se va a hospitalizar o no.')
+st.info('Esta aplicación predice si un paciente se va a hospitalizar o no. Modifique las variables de entrada para obtener la predicción')
 #st.text('Fixed width text')
 
 with st.sidebar:
