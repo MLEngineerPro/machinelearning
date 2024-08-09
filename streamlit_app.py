@@ -56,7 +56,10 @@ cols_features=[
  ]
 features=[(edad, genero, triaje, causa, tipoemp,ordenesl,ordenesm,ordenesa,ordenesi,especialidad, totaldxurordenesa,nroatencionesprev, vivemed,ordencx  )]
 data_features=pd.DataFrame(data=features, columns=cols_features)
+
+st.subtitle('Características ingresadas ')
 data_features
+
 # Realizo predicción
 prediction=model.predict(data_features)
 prediction_Percentage=model.predict_proba(data_features)
