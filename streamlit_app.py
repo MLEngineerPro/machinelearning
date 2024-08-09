@@ -8,10 +8,23 @@ st.text('Fixed width text')
 with st.sidebar:
   st.header('Ingrese las características')
   st.slider('Seleccione la edad:',1,120, 40)
+  genero = st.selectbox('Género', ('Masculino', 'Femenino', ''))
+  triaje= st.selectbox('Triaje', ('1', '2', '3','4','5'))
+  causa = st.selectbox('Causa ingreso', ('ENFERMEDAD GENERAL', 'ACCIDENTE OFIDICO',
+                                         'ENFERMEDAD PROFESIONAL','ACCIDENTE DE TRABAJO',
+                                         'ACCIDENTE DE TRANSITO','EVENTO CATASTROFICO',
+                                         'SOSPECHA DE ABUSO SEXUAL'))
+tipoemp = st.selectbox('Tipo empresa', ('ENTES TERRITORIALES','ENTIDAD REGIMEN EXCEPC COMPART',
+                                        'ENTIDADES REGIMEN DE EXCEPCION','E.P.S. REGIMEN CONTRIB COMPART',
+                                        'E.P.S. REGIMEN CONTRIBUTIVO','E.P.S. REGIMEN SUBSID COMPARTI',
+                                        'E.P.S. REGIMEN SUBSIDIADO','EXTRANJERO PERSONA JURIDICA',
+                                        'EXTRANJERO PERSONA NATURAL','FOSYGA - ACCIDENT TTO - ECAT'))
+
+  st.slider('Ordenes Laboratorio:',1, 10, 2)
+  st.slider('Ordenes Microbiologia:',1, 10, 2)
+  st.slider('Ordenes Ayudas:',1, 10, 2)
+  st.slider('Ordenes Interconsulta:',1, 10, 2)
+
   
-  island = st.selectbox('Island', ('Biscoe', 'Dream', 'Torgersen'))
-  bill_length_mm = st.slider('Bill length (mm)', 32.1, 59.6, 43.9)
-  bill_depth_mm = st.slider('Bill depth (mm)', 13.1, 21.5, 17.2)
-  flipper_length_mm = st.slider('Flipper length (mm)', 172.0, 231.0, 201.0)
-  body_mass_g = st.slider('Body mass (g)', 2700.0, 6300.0, 4207.0)
-  gender = st.selectbox('Gender', ('male', 'female'))
+  
+  
