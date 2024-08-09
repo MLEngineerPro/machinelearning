@@ -14,7 +14,7 @@ with st.sidebar:
                                          'ENFERMEDAD PROFESIONAL','ACCIDENTE DE TRABAJO',
                                          'ACCIDENTE DE TRANSITO','EVENTO CATASTROFICO',
                                          'SOSPECHA DE ABUSO SEXUAL'))
-tipoemp = st.selectbox('Tipo empresa', ('ENTES TERRITORIALES','ENTIDAD REGIMEN EXCEPC COMPART',
+  tipoemp = st.selectbox('Tipo empresa', ('ENTES TERRITORIALES','ENTIDAD REGIMEN EXCEPC COMPART',
                                         'ENTIDADES REGIMEN DE EXCEPCION','E.P.S. REGIMEN CONTRIB COMPART',
                                         'E.P.S. REGIMEN CONTRIBUTIVO','E.P.S. REGIMEN SUBSID COMPARTI',
                                         'E.P.S. REGIMEN SUBSIDIADO','EXTRANJERO PERSONA JURIDICA',
