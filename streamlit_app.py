@@ -57,7 +57,7 @@ cols_features=[
 features=[(edad, genero, triaje, causa, tipoemp,ordenesl,ordenesm,ordenesa,ordenesi,especialidad, totaldxurordenesa,nroatencionesprev, vivemed,ordencx  )]
 data_features=pd.DataFrame(data=features, columns=cols_features)
 
-st.subtitle('Características ingresadas ')
+st.header('Características ingresadas ')
 data_features
 
 # Realizo predicción
