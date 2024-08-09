@@ -3,12 +3,11 @@ import joblib
 import xgboost
 import pandas as pd
 
-st.title('🎈 Aplicación de Machine Learning ')
+st.title('🎈 Predicción de pacientes que serán hospitalizados - Machine Learning ')
 st.info('Esta aplicación predice si un paciente se va a hospitalizar o no. Modifique las variables de entrada para obtener la predicción')
-#st.text('Fixed width text')
 
-with st.expander('Características'):
-  #st.header('Ingrese las características')
+with st.sidebar():
+  st.header('Modifique las características')
   edad=st.slider('Seleccione la edad:',1,120, 40)
   genero = st.selectbox('Género', ('Masculino', 'Femenino', ''))
   triaje= st.selectbox('Triaje', ('1', '2', '3','4','5'))
