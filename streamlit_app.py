@@ -52,7 +52,7 @@ cols_features=[
 'Total Dx en Urgencias',
 'Numero Atenciones Previas',
 'Vive en Medellin',
-'Orden Cirugia '
+'Orden Cirugia'
  ]
 features=[(edad, genero, triaje, causa, tipoemp,ordenesl,ordenesm,ordenesa,ordenesi,especialidad, totaldxurordenesa,nroatencionesprev, vivemed,ordencx  )]
 data_features=pd.DataFrame(data=features, columns=cols_features)
