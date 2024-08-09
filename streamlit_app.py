@@ -6,7 +6,7 @@ import pandas as pd
 st.title('🎈 Predicción de pacientes que serán hospitalizados - Machine Learning ')
 st.info('Esta aplicación predice si un paciente se va a hospitalizar o no. Modifique las variables de entrada para obtener la predicción')
 
-with st.sidebar():
+with st.sidebar:
   st.header('Modifique las características')
   edad=st.slider('Seleccione la edad:',1,120, 40)
   genero = st.selectbox('Género', ('Masculino', 'Femenino', ''))
