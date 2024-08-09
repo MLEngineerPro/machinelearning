@@ -71,7 +71,5 @@ def return_predic(pred, p_pred):
     return pr1
 
 pr1=return_predic(prediction,prediction_Percentage)
-prediction
-prediction_Percentage
 st.info(f"El paciente tiene una probabilidad del {prediction_Percentage[0,0]:.2%}  de {pr1} ser hospitalizado")
   
