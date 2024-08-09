@@ -69,6 +69,6 @@ def return_predic(pred, p_pred):
         pr1='Si'
     return print(f"El paciente tiene una probabilidad del {p_pred[0,0]:.2%}  de {pr1} ser hospitalizado")
 
-#st.text(return_predic(prediction,prediction_Percentage))
+st.text(return_predic(prediction,prediction_Percentage))
 
   
