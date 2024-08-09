@@ -1,9 +1,9 @@
 import streamlit as st
 import joblib
 
-st.title('🎈 Machine Learning App')
-st.info('This app build a machine learning model')
-st.text('Fixed width text')
+st.title('🎈 Aplicación de Machine Learning ')
+st.info('Esta aplicación predice si un paciente se va a hospitalizar o no.')
+#st.text('Fixed width text')
 
 with st.sidebar:
   st.header('Ingrese las características')
