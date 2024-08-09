@@ -5,7 +5,7 @@ st.title('🎈 Machine Learning App')
 st.info('This app build a machine learning model')
 st.text('Fixed width text')
 
-with st.sidebar
+with st.sidebar:
   st.select_slider('Seleccionesla edad', options=[1,120])
   st.header('Input features')
   island = st.selectbox('Island', ('Biscoe', 'Dream', 'Torgersen'))
