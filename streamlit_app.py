@@ -7,7 +7,7 @@ st.text('Fixed width text')
 
 with st.sidebar:
   st.header('Ingrese las características')
-  st.slider('Seleccione la edad:',1,120, 40)
+  edad=st.slider('Seleccione la edad:',1,120, 40)
   genero = st.selectbox('Género', ('Masculino', 'Femenino', ''))
   triaje= st.selectbox('Triaje', ('1', '2', '3','4','5'))
   causa = st.selectbox('Causa ingreso', ('ENFERMEDAD GENERAL', 'ACCIDENTE OFIDICO',
@@ -19,12 +19,17 @@ with st.sidebar:
                                         'E.P.S. REGIMEN CONTRIBUTIVO','E.P.S. REGIMEN SUBSID COMPARTI',
                                         'E.P.S. REGIMEN SUBSIDIADO','EXTRANJERO PERSONA JURIDICA',
                                         'EXTRANJERO PERSONA NATURAL','FOSYGA - ACCIDENT TTO - ECAT'))
-
-  st.slider('Ordenes Laboratorio:',1, 10, 2)
-  st.slider('Ordenes Microbiologia:',1, 10, 2)
-  st.slider('Ordenes Ayudas:',1, 10, 2)
-  st.slider('Ordenes Interconsulta:',1, 10, 2)
-
+  ordenenesl=st.slider('Ordenes Laboratorio:',1, 10, 2)
+  ordenesm=st.slider('Ordenes Microbiologia:',1, 10, 2)
+  ordenesa=st.slider('Ordenes Ayudas:',1, 10, 2)
+  ordenesi=st.slider('Ordenes Interconsulta:',1, 10, 2)
+  especialidad = st.selectbox('Especialidad tratante', ('ALERGOLOGIA CLINICA','ALERGOLOGÍA PEDIÁTRICA',
+                                                        'ANESTESIA','ANESTESIOLOGIA CARDIOVASCULAR',
+                                                        'ANTIBIOTICOTERAPIA','CARDIOLOGIA - HEMODINAMIA',
+                                                        'CIRUGIA GENERAL','MEDICO GENERAL'))
+  totaldxurordenesa=st.slider('Total dx Urgencias:',1, 10, 3)
+  vivemed = st.selectbox('Vive en Medellín', ('Si', 'No'))
+  ordencx = st.selectbox('Orden Cirugía', ('Si', 'No'))
   
   
   
