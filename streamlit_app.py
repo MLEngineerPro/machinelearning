@@ -30,6 +30,42 @@ with st.sidebar:
   totaldxurordenesa=st.slider('Total dx Urgencias:',1, 10, 3)
   vivemed = st.selectbox('Vive en Medellín', ('Si', 'No'))
   ordencx = st.selectbox('Orden Cirugía', ('Si', 'No'))
-  
+
+# Cargo el modelo
+model = joblib.load('production/models/pipeline_xgbv5_bal_new_fea.joblib')
+
+# Defino las variables
+cols_features=[
+'Edad Ingreso',
+'Sexo',
+'Clasificacion Triaje',
+'Causa Ingreso',
+'Tipo Empresa',
+'Ordenes Laboratorio',
+'Ordenes Microbiologia',
+'Ordenes Ayudas',
+'Ordenes Interconsulta',
+'Especialidad Tratante',
+'Total Dx en Urgencias',
+'Numero Atenciones Previas',
+'Vive en Medellin',
+'Orden Cirugia '
+ ]
+features=[(edad, genero, triaje, causa, tipoemp,ordenesl,ordenesm,ordenesa,ordenesi,especialidad, totaldxurordenesa, vivemed,ordencx  )]
+data_features=pd.DataFrame(data=features, columns=cols_features)
+
+# Realizo predicción
+prediction=model.predict(data_features)
+prediction_Percentage=model.predict_proba(data_features)
+    
+def return_predic(pred, p_pred):
+    pr1=''
+    if pred[0]==0: 
+        pr1='No'
+    else:
+        pr1='Si'
+    return print(f"El paciente tiene una probabilidad del {p_pred[0,0]:.2%}  de {pr1} ser hospitalizado")
+
+st.text(return_predic(prediction,prediction_Percentage))
   
   
